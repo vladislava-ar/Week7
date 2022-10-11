@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+header {
+    margin: auto;
+    height: 100vh;
+    width: 90vw;
+    background-image: url(../image/fon.png);
+    background-repeat: no-repeat;
+}
+
+.top {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 1.125rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    height: 10vh;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    height: 40vh;
+}
+
+
+.number {
+    grid-area: number;
+    color: white;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 1.5rem;
+    width: max-content;
+}
+
+.about, .catalog, .delivery {
+    color: white;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+.name {
+    max-width: 30%;
+}
+
+.underwear {
+    color: white;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 1.875rem;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+    color: #4D4D4D;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 2.5rem;
+}
+
+.pr {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    'pr1 pr2 pr3 pr4';
+    justify-content: center;
+    align-content: space-around;
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pr1 {
+    grid-area: pr1;
+}
+
+.pr2 {
+    grid-area: pr2;
+}
+
+.pr3 {
+    grid-area: pr3;
+}
+
+.pr4 {
+    grid-area: pr4;
+}
+
+.pr1, .pr2, .pr3, .pr4 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.look {
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+    color: #4D4D4D;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 2.5rem;
+}
+
+.new {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    'new1 new1 new2 new2'
+    'new3 new4 new4 new4';
+    justify-items: center;
+    justify-content: center;
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.new1 {
+    grid-area: new1;
+}
+
+.new2 {
+    grid-area: new2;
+}
+
+.new3 {
+    grid-area: new3;
+}
+
+.new4 {
+    grid-area: new4;
+}
+
+.new1, .new2, .new3, .new4 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+footer {
+    display: grid;
+    grid-template-rows: repeat(3, min-content);
+    grid-template-columns: repeat(3, min-content);
+    grid-template-areas: 
+    'ctlg dlvr pay'
+    'inst yout teleg';
+    justify-items: center;
+    justify-content: center;
+    gap: 5%;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+}
+.ctlg, .dlvr, .pay {
+    color: #4D4D4D;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+
+.ctlg {
+    grid-area: ctlg;
+}
+
+.dlvr {
+    grid-area: dlvr;
+}
+
+.pay {
+    grid-area: pay;
+}
+
+.inst {
+    grid-area: inst;
+}
+
+.yout {
+    grid-area: yout;
+}
+
+.teleg {
+    grid-area: teleg;
+}

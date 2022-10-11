@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.header {
+    background-color: lightgray;
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    background-color: lightyellow;
+    grid-area: main;
+    display: grid;
+    text-align: center;
+    grid-template-rows: 50% 50%;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.aside {
+    background-color: rgb(161, 190, 161);
+    grid-area: aside;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.part {
+    margin-left: 10px;
+    margin-right: 10px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        'nav1 nav2'
+        'nav3 nav3';
+}
+
+.nav1, .nav2, .nav3 {
+    background-color: wheat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav1 {
+    grid-area: nav1;
+    margin-right: 5px;
+}
+
+.nav2 {
+    grid-area: nav2;
+    margin-left: 5px;
+}
+
+.nav3 {
+    grid-area: nav3;
+}
+
+.footer {
+    background-color: lightgrey;
+    grid-area: footer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.foot1,
+.foot2,
+.foot3,
+.foot4 {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 70%;
+}
+
+.foot1 {
+    margin-left: 10px;
+}
+
+.foot4 {
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        display: none;
+    }
+
+    .header {
+        height: 20vh;
+    }
+    .main {
+        height: 80vh;
+    }
+    .aside {
+        height: 80vh;
+    }
+}
+
+@media screen and (min-width: 501px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 0.5fr 4fr 1fr;
+        grid-template-areas:
+            'header header'
+            'main aside'
+            'footer footer';
+        height: 100vh;
+        font-weight: bolder;
+        font-size: 1em; 
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .header {
+        height: 15vh;
+    }
+    .main {
+        height: 50vh;
+    }
+    .aside {
+        height: 35vh;
+    }
+}
